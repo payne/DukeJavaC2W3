@@ -12,19 +12,18 @@ public class Week3Countries {
 		Week3Countries w3c = new Week3Countries();
 		try {
 			w3c.tester();
-			w3c.listExportersTwoProducts(CSVparser, exportItem1, exportItem2); //Need help with this please, don't understand how to set this up it seems.
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("Normal Termination.");
-	}// end main
+	}
 
 	private void tester() throws IOException {
 		FileResource fr = new FileResource("exports/exports_small.csv");
 		CSVParser parser = fr.getCSVParser();
 		countryInfo(parser, "Germany");
-	}// end tester
+	}
 
 	private void countryInfo(CSVParser parser, String country) throws IOException {
 		List<CSVRecord> records = parser.getRecords();
@@ -36,12 +35,6 @@ public class Week3Countries {
 				System.out.println(csvRecord);
 			}
 		}
-	}// end countryInfo
-	
-	public void listExportersTwoProducts(CSVParser parser, String exportItem1, String exportItem2) {
-		FileResource fr = new FileResource("exports/exports_small.csv");
-		parser = fr.getCSVParser();
-	}// listExportersTwoProducts
-	
+	}
 
-}// end class
+}
