@@ -1,0 +1,12 @@
+import edu.duke.*;
+
+public class Scratch {
+	StorageResource sr = new StorageResource();
+    sr.add("Hello");
+    sr.add("World");
+    for (String s : sr.data())
+    {
+        System.out.println(s);
+    }
+
+}
