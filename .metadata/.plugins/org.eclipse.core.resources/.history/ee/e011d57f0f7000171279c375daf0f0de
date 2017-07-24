@@ -47,7 +47,7 @@ public class Week3Countries {
 	
 	public void listExportersTwoProducts(CSVParser parser, String exportItem1, String exportItem2) {
 		for (CSVRecord csvRecord : parser) {
-			System.out.println(csvRecord);
+			System.out.println("Country");
 		}
 	}// listExportersTwoProducts
 	

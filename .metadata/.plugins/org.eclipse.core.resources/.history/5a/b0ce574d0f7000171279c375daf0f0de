@@ -29,7 +29,7 @@ public class Week3Countries {
 	private void tester() throws IOException {
 		FileResource fr = new FileResource("exports/exports_small.csv");
 		CSVParser parser = fr.getCSVParser();
-		//countryInfo(parser, "Germany");
+		countryInfo(parser, "Germany");
 		listExportersTwoProducts(parser, "gold", "diamonds");
 	}// end tester
 
